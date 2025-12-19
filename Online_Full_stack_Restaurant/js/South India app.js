@@ -1,6 +1,6 @@
 const PRODUCTS = [
   {
-    id: "ph-elec-001",
+    id: "si-items-001",
     name: "Idli",
     category: "Main",
     image: "./Images/Idli.jpg",
@@ -12,7 +12,7 @@ const PRODUCTS = [
     description: "Idli is a popular South Indian dish that is typically served as a breakfast or snack. It’s a savory, steamed cake made from a fermented batter of rice and urad dal (split black gram)."
   },
   {
-    id: "ph-elec-002",
+    id: "si-items-002",
     name: "Dosa",
     category: "Main",
     image: "./Images/Plain-Dosa.webp",
@@ -24,7 +24,7 @@ const PRODUCTS = [
     description: "It is a popular South Indian dish that is similar to a thin, crispy crepe or pancake. It’s made from a fermented batter of rice and urad dal (split black gram)."
   },
   {
-    id: "ph-elec-003",
+    id: "si-items-003",
     name: "Puttu",
     category: "Main",
     image: "./Images/puttu.jpeg",
@@ -36,7 +36,7 @@ const PRODUCTS = [
     description: "Putu (also known as Puttu) is a popular South Indian and Sri Lankan dish made from rice flour and coconut, typically served as a breakfast or snack."
   },
   {
-    id: "ph-life-001",
+    id: "si-items-004",
     name: "Masala Dosa",
     category: "Main",
     image: "./Images/Masala_Dosai.jpeg",
@@ -48,7 +48,7 @@ const PRODUCTS = [
     description: "It is a crispy, thin crepe made from fermented rice and urad dal (split black gram) batter. What sets masala dosa apart is the spiced potato filling inside the dosa,."
   },
   {
-    id: "ph-home-001",
+    id: "si-items-005",
     name: "Upma",
     category: "Main",
     image: "./Images/Upma.jpg",
@@ -60,7 +60,7 @@ const PRODUCTS = [
     description: "It is a savory South Indian dish made primarily from semolina (also known as rava or sooji).."
   },
   {
-    id: "ph-life-002",
+    id: "si-items-006",
     name: "Adai with Aviyal",
     category: "Lifestyle",
     image: "./Images/Adai_Aviyal.webp",
@@ -87,6 +87,7 @@ function productCard(p) {
           </span>
         </div>
 
+        <!-- Product image -->
         <div>
           <span>
             <img src=${p.image}>

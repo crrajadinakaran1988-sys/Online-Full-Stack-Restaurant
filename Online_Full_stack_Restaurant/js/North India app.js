@@ -1,8 +1,9 @@
 const PRODUCTS = [
   {
-    id: "ph-elec-001",
+    id: "ni-items-001",
     name: "Naan",
     category: "Breads",
+    image: "./Images/Naan.jpg",
     price: 2,
     rating: 4.8,
     reviews: 2143,
@@ -11,20 +12,22 @@ const PRODUCTS = [
     description: "Naan bread is a type of leavened Indian flatbread, typically served with curries, stews, and other dishes in South Asian cuisine. It's soft, fluffy, and often slightly chewy, with a characteristic charred, slightly crispy texture on the outside."
   },
   {
-    id: "ph-elec-002",
+    id: "ni-items-002",
     name: "Chapathi",
     category: "Breads",
+    image: "./Images/Chapati.jpg",
     price: 3,
     rating: 4.7,
     reviews: 987,
     stock: 12,
-    badge: "Pro Choice",
+    badge: "Dietery",
     description: "It's made from whole wheat flour, water, and a pinch of salt, and it's unleavened."
   },
   {
-    id: "ph-elec-003",
+    id: "ni-items-003",
     name: "Poori",
     category: "Breads",
+    image: "./Images/Poori.jpg",
     price: 2,
     rating: 4.9,
     reviews: 5321,
@@ -33,36 +36,39 @@ const PRODUCTS = [
     description: "Indian bread made from unleavened wheat flour dough that is deep-fried until it puffs up. It’s typically round, soft, and slightly crispy on the outside. The dough is simple, consisting mainly of wheat flour, a little salt, and water."
   },
   {
-    id: "ph-life-001",
+    id: "ni-items-004",
     name: "Paneer Butter Masala",
     category: "Gravy- Sidedish",
+    image: "./Images/Panner_butter_masala.jpg",
     price: 12,
     rating: 4.6,
     reviews: 764,
     stock: 18,
-    badge: "New",
+    badge: "Gravy",
     description: "It is a rich and creamy North Indian dish made from paneer (Indian cottage cheese) cooked in a delicious tomato-based gravy with butter, cream, and a blend of aromatic spices."
   },
   {
-    id: "ph-home-001",
+    id: "ni-items-005",
     name: "Dal Fry (tadka)",
     category: "Home",
+    image: "./Images/Dal_Fry.jpg",
     price: 11,
     rating: 4.4,
     reviews: 432,
     stock: 30,
-    badge: "Value",
+    badge: "Gravy",
     description: "Dal Fry is a popular Indian dish made from lentils (dal) cooked with onions, tomatoes, and a variety of spices."
   },
   {
-    id: "ph-life-002",
+    id: "ni-items-006",
     name: "Rajma Masala",
     category: "Lifestyle",
+    image: "./Images/Rajma_masala.jpeg",
     price: 14,
     rating: 4.7,
     reviews: 1890,
     stock: 50,
-    badge: "Eco",
+    badge: "Gravy",
     description: "Rajma Masala is a popular North Indian dish made with red kidney beans cooked in a flavorful, spiced tomato gravy."
   }
 ];
@@ -78,6 +84,13 @@ function productCard(p) {
           <span class="text-xs text-slate-500">${p.category}</span>
           <span class="text-xs font-medium bg-slate-100 px-3 py-1 rounded-full">
             ${p.badge}
+          </span>
+        </div>
+
+        <!-- Product image -->
+        <div>
+          <span>
+            <img src=${p.image}>
           </span>
         </div>
 
