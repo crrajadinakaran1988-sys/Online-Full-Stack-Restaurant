@@ -1,69 +1,75 @@
 const PRODUCTS = [
   {
     id: "ph-elec-001",
-    name: "Logitech MX Master 3S Wireless Mouse",
-    category: "Electronics",
-    price: 99,
+    name: "Idli",
+    category: "Main",
+    image: "./Images/Idli.jpg",
+    price: "10",
     rating: 4.8,
     reviews: 2143,
     stock: 24,
     badge: "Bestseller",
-    description: "Advanced ergonomic mouse with ultra-fast scrolling and silent clicks."
+    description: "Idli is a popular South Indian dish that is typically served as a breakfast or snack. It’s a savory, steamed cake made from a fermented batter of rice and urad dal (split black gram)."
   },
   {
     id: "ph-elec-002",
-    name: "Keychron K8 Pro Mechanical Keyboard",
-    category: "Electronics",
-    price: 179,
+    name: "Dosa",
+    category: "Main",
+    image: "./Images/Plain-Dosa.webp",
+    price: 15,
     rating: 4.7,
     reviews: 987,
     stock: 12,
     badge: "Pro Choice",
-    description: "Hot-swappable mechanical keyboard with RGB and aluminum frame."
+    description: "It is a popular South Indian dish that is similar to a thin, crispy crepe or pancake. It’s made from a fermented batter of rice and urad dal (split black gram)."
   },
   {
     id: "ph-elec-003",
-    name: "Sony WH-1000XM5 Noise Cancelling Headphones",
-    category: "Electronics",
-    price: 349,
+    name: "Puttu",
+    category: "Main",
+    image: "./Images/puttu.jpeg",
+    price: 10,
     rating: 4.9,
     reviews: 5321,
     stock: 8,
     badge: "Top Rated",
-    description: "Industry-leading noise cancellation with premium sound quality."
+    description: "Putu (also known as Puttu) is a popular South Indian and Sri Lankan dish made from rice flour and coconut, typically served as a breakfast or snack."
   },
   {
     id: "ph-life-001",
-    name: "Bellroy Classic Backpack 20L",
-    category: "Lifestyle",
-    price: 129,
+    name: "Masala Dosa",
+    category: "Main",
+    image: "./Images/Masala_Dosai.jpeg",
+    price: 18,
     rating: 4.6,
     reviews: 764,
     stock: 18,
     badge: "New",
-    description: "Slim everyday backpack with sustainable materials and smart storage."
+    description: "It is a crispy, thin crepe made from fermented rice and urad dal (split black gram) batter. What sets masala dosa apart is the spiced potato filling inside the dosa,."
   },
   {
     id: "ph-home-001",
-    name: "Philips Smart LED Desk Lamp",
-    category: "Home",
-    price: 59,
+    name: "Upma",
+    category: "Main",
+    image: "./Images/Upma.jpg",
+    price: 14,
     rating: 4.4,
     reviews: 432,
     stock: 30,
     badge: "Value",
-    description: "Eye-care desk lamp with adjustable brightness and color temperature."
+    description: "It is a savory South Indian dish made primarily from semolina (also known as rava or sooji).."
   },
   {
     id: "ph-life-002",
-    name: "Hydro Flask Stainless Steel Water Bottle (1L)",
+    name: "Adai with Aviyal",
     category: "Lifestyle",
+    image: "./Images/Adai_Aviyal.webp",
     price: 45,
     rating: 4.7,
     reviews: 1890,
     stock: 50,
     badge: "Eco",
-    description: "Double-wall insulated bottle keeps drinks cold for 24 hours."
+    description: "It is a traditional South Indian dish that’s both nutritious and delicious."
   }
 ];
 
@@ -78,6 +84,12 @@ function productCard(p) {
           <span class="text-xs text-slate-500">${p.category}</span>
           <span class="text-xs font-medium bg-slate-100 px-3 py-1 rounded-full">
             ${p.badge}
+          </span>
+        </div>
+
+        <div>
+          <span>
+            <img src=${p.image}>
           </span>
         </div>
 
