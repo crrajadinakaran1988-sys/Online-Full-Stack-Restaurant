@@ -44,14 +44,14 @@ function register() {
 // logout
 function logout() {
   localStorage.removeItem("ph_user");
-  window.location.href = "login.html";
+  window.location.href = "Login_Page.html";
 }
 
 // check auth
 function checkAuth() {
   const user = getUser();
     if (!user) {
-        window.location.href = "login.html";
+        window.location.href = "Login_Page.html";
     }
 }
 

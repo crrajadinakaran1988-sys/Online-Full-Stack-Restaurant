@@ -63,7 +63,7 @@ const PRODUCTS = [
     id: "ni-items-006",
     name: "Rajma Masala",
     category: "Lifestyle",
-    image: "./Images/Rajma_masala.jpeg",
+    image: "./Images/r1.jpeg",
     price: 14,
     rating: 4.7,
     reviews: 1890,
@@ -88,9 +88,9 @@ function productCard(p) {
         </div>
 
         <!-- Product image -->
-        <div>
+        <div class="flex justify-between items-start mb-3">
           <span>
-            <img src=${p.image}>
+            <img src=${p.image} width="100" height="100">
           </span>
         </div>
 
